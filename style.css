@@ -47,6 +47,11 @@ p {
 /* Links & Accents */
 
 /* Images */
+.seasonal-offer img, .special-offer img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
 
 /* Hero Section */
 nav {
@@ -79,19 +84,19 @@ nav a:hover {
 /* Main Content */
 
 /* About Section */
-.about-us {
+.about-us, #about-fran{
   max-width: 1080px;
   margin: 0 auto 48px auto;
 }
 
 /* Specials Section */
-.specials-list {
+.specials-list, .seasonal-list {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-.special-offer {
+.special-offer, .seasonal-offer {
   background-color: var(--linen);
   border: 2px solid var(--sage);
   border-radius: 8px;
@@ -100,7 +105,7 @@ nav a:hover {
   width: 400px;
 }
 
-.special-offer:hover {
+.special-offer:hover, .seasonal-offer:hover {
   transform: scale(1.05);
   transition: 0.3s ease-in-out;
 }
